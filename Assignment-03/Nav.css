@@ -1,0 +1,483 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111111;
+    background-color: rgb(159, 159, 162);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 25px #cccccc;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.primary-navbar {
+    max-width: 100%;
+    margin: auto;
+    padding: 15px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.logo img:hover {
+    transform: scale(1.15);
+}
+
+.primary-navbar ul {
+    display: flex;
+    gap: 50px;
+}
+
+.primary-navbar a {
+    font-size: 16px;
+    font-weight: 900;
+    color: #111111;
+
+}
+
+.primary-navbar a:hover {
+    color: #d1121d;
+}
+
+
+
+
+.banner {
+    min-height: 85vh;
+    padding: 80px 24px;
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1)),
+        url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1600&auto=format&fit=crop");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.banner p:first-child {
+    color: #ff4d4d;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.banner h1 {
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.banner p:nth-of-type(2) {
+    max-width: 600px;
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 35px;
+}
+
+.banner a.home {
+    display: inline-block;
+    background-color: #d1121d;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.banner a.home:hover {
+    background-color: #b00d17;
+}
+
+
+.Products {
+    padding: 100px 24px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.Products h2 {
+    font-size: 14px;
+    color: #d1121d;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.Products p:nth-of-type(1) {
+    font-size: 36px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 12px;
+}
+
+.Products p:nth-of-type(2) {
+    max-width: 650px;
+    margin: 0 auto 50px auto;
+    color: #666666;
+    font-size: 16px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.product-container article {
+    width: 220px;
+    background-color: #f1efef;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+    padding: 28px 20px;
+    box-shadow: 0 5px 15px #eeeeee;
+}
+
+.product-container article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #dddddd;
+}
+
+.product-container img {
+    height: 130px;
+    width: auto;
+    margin: 0 auto 20px auto;
+    object-fit: contain;
+}
+
+.product-container article:hover img {
+    transform: scale(1.35);
+}
+
+.product-container h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111111;
+}
+
+.product-container article:hover h3 {
+    color: #d1121d;
+    transform: scale(1.25);
+}
+
+.Recipes {
+    background-color: #f9f9f9;
+    padding: 100px 24px;
+    text-align: center;
+}
+
+.Recipes>img {
+    max-width: 100%;
+    max-height: 420px;
+    margin: 0 auto 40px auto;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px #dddddd;
+}
+
+.Recipes h2 {
+    font-size: 14px;
+    color: #d1121d;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.Recipes h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 12px;
+}
+
+.Recipes p {
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    color: #666666;
+    font-size: 16px;
+}
+
+.Recipes>a {
+    display: inline-block;
+    color: #d1121d;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 55px;
+}
+
+.Recipes>a:hover {
+    color: #b00d17;
+    transform: translateX(5px);
+    transition: all 0.3s ease-in-out;
+}
+
+.recipe-container {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.recipe-container article {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px #dddddd;
+    width: 320px;
+}
+
+.recipe-container article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px #cccccc;
+}
+
+.recipe-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: left;
+}
+
+
+.about {
+    background-color: white;
+    padding: 100px 24px;
+    text-align: center;
+    max-width: auto;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 14px;
+    color: #d1121d;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.about h3 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #111111;
+    margin-bottom: 16px;
+}
+
+.about p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about a {
+    display: inline-block;
+    background-color: #d1121d;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.about a:hover {
+    background-color: #b00d17;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+ 
+
+footer {
+    background-color: #111111;
+    color: white;
+    padding: 60px 24px 30px 24px;
+    text-align: center;
+}
+
+footer img[alt="Shan footer logo"] {
+    height: auto;
+    max-width: 200px;
+    margin: 0 auto 30px auto;
+}
+
+footer h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+footer nav.Quick-Links,
+footer nav.Help {
+    margin-bottom: 20px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+footer nav a {
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+footer nav a:hover {
+    color: #d1121d;
+}
+
+footer a[target="_blank"] {
+    display: inline-block;
+    margin: 8px;
+}
+
+footer a[target="_blank"] img {
+    border-radius: 50%;
+    padding: 6px;
+    background-color: #333333;
+}
+
+
+.facebook-icon:hover {
+    background-color: blue;
+    transform: translateY(-3px);
+}
+.youtube-icon:hover {
+    background-color: red;
+    transform: translateY(-3px);
+}
+.instagram-icon:hover {
+    background-color: #bc2a8d;
+    transform: translateY(-3px);
+}
+footer hr {
+    border: 0;
+    height: 1px;
+    background-color: #333333;
+    margin: 40px auto 24px auto;
+    max-width: 1000px;
+}
+
+footer p {
+    color: #777777;
+    font-size: 13px;
+}
+
+
+@media (max-width: 768px) {
+
+    .primary-navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .primary-navbar ul {
+        gap: 18px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .banner {
+        min-height: 75vh;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .banner p:nth-of-type(2) {
+        font-size: 15px;
+    }
+
+    .Products p:nth-of-type(1) {
+        font-size: 28px;
+    }
+
+    .Recipes h3 {
+        font-size: 28px;
+    }
+
+    .product-container,
+    .recipe-container {
+        gap: 20px;
+    }
+
+    .about {
+        padding: 60px 24px;
+    }
+
+    .about h3 {
+        font-size: 28px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+}
