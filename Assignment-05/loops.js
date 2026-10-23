@@ -12,16 +12,18 @@ function prompt(message) {
 }
 //------------------------------------------------------------------------------//
 
-// Q1: Print numbers from 1 to 10 using for loop
+// 1. Print numbers 1 to 10: Write a program using a for loop to print numbers from 1 to 10.
 {
+    console.log("Print number from 1 - 10")
     for (let i = 1; i <= 10; i++) {
         console.log(i);
     }
 }
 
 
-// Q2: Find the sum of the first N natural numbers using while loop
+// 2. Sum of first N numbers: Use a while loop to calculate the sum of the first N natural numbers.
 {
+    console.log("To calculate the sum of the first N natural numbers.")
     let n = Number(prompt("Q2 - Enter a positive number: "));
     let i = 1;
     let sum = 0;
@@ -35,8 +37,9 @@ function prompt(message) {
 }
 
 
-// Q3: Print the multiplication table of a number using for loop
+// 3. Multiplication table: Print the multiplication table of a given number using a for loop.
 {
+    console.log("Enter a Number to Get it's table")
     let number = Number(prompt("Q3 - Enter a number: "));
 
     for (let i = 1; i <= 10; i++) {
@@ -45,8 +48,9 @@ function prompt(message) {
 }
 
 
-// Q4: Find the factorial of a number using while loop
+// 4. Factorial calculation: Write a program using a while loop to find the factorial of a given number.
 {
+    console.log("Find Fractional Number of the given number")
     let num = Number(prompt("Q4 - Enter a non-negative whole number: "));
     let factorial = 1;
     let i = 1;
@@ -60,15 +64,16 @@ function prompt(message) {
 }
 
 
-// Q5: Print numbers from 10 to 1 using for loop
+// 5. Reverse counting: Print numbers from 10 down to 1 using a for loop.
 {
+    console.log("Reverse Count from 10 - 1")
     for (let i = 10; i >= 1; i--) {
         console.log(i);
     }
 }
 
 
-// Q6: Print even numbers up to N using do-while loop
+// 6. Even numbers up to N: Use a do-while loop to print all even numbers up to N.
 {
     let limit = Number(prompt("Q6 - Enter a number: "));
     let i = 2;
@@ -82,7 +87,7 @@ function prompt(message) {
 }
 
 
-// Q7: Find the sum of digits using while loop
+// 7. Sum of digits: Write a program using a while loop to calculate the sum of digits of a given number.
 {
     let num = Number(prompt("Q7 - Enter a positive whole number: "));
     let sum = 0;
@@ -96,7 +101,7 @@ function prompt(message) {
 }
 
 
-// Q8: Print the first 10 Fibonacci numbers using for loop
+// 8. Fibonacci series: Generate the first 10 terms of the Fibonacci series using a for loop.
 {
     let a = 0;
     let b = 1;
@@ -111,7 +116,7 @@ function prompt(message) {
 }
 
 
-// Q9: Guess the correct number using do-while loop
+// 9. Guessing game: Use a do-while loop to keep asking the user for a number until they guess the correct one.
 {
     let secret = 7;
     let guess;
@@ -128,9 +133,10 @@ function prompt(message) {
 }
 
 
-// Q10: Check whether a number is prime using for loop
+// 10. Prime number check: Write a program using a for loop to check if a given number is prime.
+
 {
-    let num = Number(prompt("Q10 - Enter a whole number: "));
+    let num = Number(prompt("Q10 - Enter a whole number to check if it is a prime number: "));
     let isPrime = true;
 
     if (num < 2) {
